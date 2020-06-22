@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  background-color: #5da5a4;
+  background-image: url(/images/bg-header-mobile.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 160px;
+}
+
+.root {
+  background-color: #f0fafb;
+  min-height: calc(100vh - 160px - 12px);
+  padding-bottom: 100px;
+}
+
+.root .filtersBox {
+  -webkit-transform: translateY(-55px);
+          transform: translateY(-55px);
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  margin: 0px 25px 40px;
+  padding: 0 20px;
+  width: calc(100% - 50px);
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.root .filtersBox .filtersBox__filters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 0;
+}
+
+.root .filtersBox .filtersBox__filters .commonText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 12px;
+  color: #5da5a4;
+  font-weight: bold;
+  height: 32px;
+  padding: 0 9px;
+  background-color: #f0f6f6;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.root .filtersBox .filtersBox__filters .filterRemove {
+  width: 32px;
+  height: 32px;
+  margin-right: 16px;
+  padding: 9px;
+  background-color: #5da5a4;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.root .filtersBox .filtersBox__filters .filterRemove:hover {
+  background-color: #2b3939;
+  cursor: pointer;
+}
+
+.root .filtersBox .filtersBox__filtersClearBtn {
+  color: #5da5a4;
+  background: none;
+  border: none;
+  font-weight: bolder;
+  margin-right: 20px;
+}
+
+.root .filtersBox .filtersBox__filtersClearBtn:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.root .invisibility {
+  display: none;
+}
+
+.root .offertBox {
+  -webkit-transform: translateY(75px);
+          transform: translateY(75px);
+  background-color: white;
+  margin: 0px 25px 40px;
+  padding: 35px 20px 30px;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.root .offertBox .commonText {
+  font-size: 12px;
+  color: #5da5a4;
+}
+
+.root .offertBox .offertBox__brandLogo {
+  height: 50px;
+  position: absolute;
+  -webkit-transform: translateY(-60px);
+          transform: translateY(-60px);
+}
+
+.root .offertBox .offertBox__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.root .offertBox .offertBox__header .offertBox__commonText {
+  background-color: none;
+  margin-right: 11px;
+}
+
+.root .offertBox .offertBox__header .labels {
+  height: 25px;
+  margin-left: 6px;
+  padding: 7px 9px 9px;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 13px;
+  color: white;
+}
+
+.root .offertBox .offertBox__header .newLabel {
+  background-color: #5da5a4;
+}
+
+.root .offertBox .offertBox__header .featuredLabel {
+  background-color: #2b3939;
+}
+
+.root .offertBox .offertBox__offertTitle {
+  display: inline-block;
+  margin: 11px 0 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.root .offertBox .offertBox__list {
+  color: #8d9393;
+  overflow: hidden;
+  border-bottom: 1px solid;
+}
+
+.root .offertBox .offertBox__list .offertBox__listItem {
+  float: left;
+  margin-right: 22px;
+  padding-bottom: 20px;
+  font-size: 12px;
+}
+
+.root .offertBox .offertBox__offertDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.root .offertBox .offertBox__offertDetails .commonText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 32px;
+  margin-top: 16px;
+  margin-right: 16px;
+  padding: 0 9px;
+  background-color: #f0f6f6;
+  cursor: pointer;
+}
+
+.root .offertBox .offertBox__offertDetails .commonText:hover {
+  background-color: #5da5a4;
+  color: white;
+}
+
+.root .moveTop {
+  -webkit-transform: translateY(15px);
+          transform: translateY(15px);
+}
+
+.root .featuredOffertBox {
+  border-left: 5px solid #5da5a4;
+}
+
+@media (min-width: 1000px) {
+  .header {
+    background-image: url(/images/bg-header-desktop.svg);
+    background-size: 100% 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
